@@ -10,7 +10,7 @@
 
 /* Variables */
 :root {
-    --maing-font-color: #FFFFFF;
+    --main-font-color: #FFFFFF;
     --strong-font-color: #FF286D;
     --date-font-color: #8B94A9;
     --main-bg-color: #19204A;
@@ -22,4 +22,31 @@ body {
     background-color: var(--main-bg-color);
     font-size: var(--font-size);
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+/*------------------------ Cards Container ------------------------*/
+#cards-container {
+    width: 676px;
+    height: 210px;
+    margin: auto;
+    margin-top: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
+}
+
+.card div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
 }
