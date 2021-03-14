@@ -103,16 +103,20 @@ body {
 }
 
 /* --- ICONS --- */
-.operation-card .expense-icon {
+.operation-card .opertation-type-icon {
     position: relative;
     top: 4%;
     left: 5%;
 }
 
-.operation-card .options-icon {
+.operation-card .action-buttons-container {
     position: relative;
     top: 4%;
-    right: -50%;
+    right: -32%;
+}
+
+.action-buttons-container:hover {
+    cursor: pointer;
 }
 
 .operation-info {
