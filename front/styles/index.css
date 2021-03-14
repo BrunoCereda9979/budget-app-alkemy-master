@@ -1,0 +1,25 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --maing-font-color: #FFFFFF;
+    --strong-font-color: #FF286D;
+    --date-font-color: #8B94A9;
+    --main-bg-color: #19204A;
+    --card-bg-color: #1F2C5B;
+    --font-size: 22px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-size: var(--font-size);
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
