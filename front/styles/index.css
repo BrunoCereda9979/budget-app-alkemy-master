@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -42,11 +42,43 @@ body {
     border-radius: 15px;
 }
 
-.card div {
+.card-content {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
+}
+
+/* --- EXPENSES CARD --- */
+.expenses-card h1 {
+    color: var(--main-font-color);
+    font-weight: 700;
+}
+
+.expenses-card p {
+    color: var(--strong-font-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* --- BUTTON CARD --- */
+.button-card h1 {
+    color: var(--main-font-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 21px;
+}
+
+.button-card img {
+    width: 40px;
+}
+
+.btn {
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    cursor: pointer;
 }
