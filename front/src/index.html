@@ -16,7 +16,7 @@
             <article class="card">
                 <div class="card-content expenses-card">
                     <h1>Balance Actual</h1>
-                    <p>$3522.00</p>
+                    <p id="total-balance">$3522.00</p>
                 </div>
             </article>
             <!-- Show income and show expenses buttons -->
@@ -38,7 +38,7 @@
         </section>
 
         <!-- Modal Pop-up to add a new operation -->
-        <article class="modal-container" id="modal-container">
+        <article class="modal-container hidden" id="modal-container">
             <div class="modal">
                 <h3>Nueva Operacion</h3>
                 <form>
@@ -75,5 +75,6 @@
         </section>
     </main>
     <script src="../scripts/open-close-modal.js"></script>   
+    <script src="../scripts/get-operations.js"></script>   
 </body>
 </html>
