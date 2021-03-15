@@ -19,18 +19,17 @@
                     <p>$3522.00</p>
                 </div>
             </article>
+            <!-- Show income and show expenses buttons -->
             <div class="buttons-container">
-                <!-- Show income button -->
                 <article class="small-card btn">
                     <p>Mostrar Ingresos</p>
                 </article>
-                <!-- Show expenses button -->
                 <article class="small-card btn">
                     <p>Mostrar Egresos</p>
                 </article>
             </div>
             <!-- Add new operation button -->
-            <article class="card btn">
+            <article class="card btn" id="open-modal"> <!-- OPEN MODAL -->
                 <div class="card-content button-card">
                     <h1>Nueva Operacion</h1>
                     <img src="../assets/new-operation-icon.svg" alt="New operation icon">
@@ -38,6 +37,26 @@
             </article>
         </section>
 
+        <!-- Modal Pop-up to add a new operation -->
+        <article class="modal-container" id="modal-container">
+            <div class="modal">
+                <h3>Nueva Operacion</h3>
+                <form class="add-operation-form" action="#">
+                    <input type="text" name="operation-desc" id="operation-desc-input" placeholder="Concepto">
+                    <input type="number" name="operation-amount" id="operation-amount-input" placeholder="Monto" min="1" step="any">
+                    <input type="date" name="operation-date" id="operation-input">
+                    <div>
+                        <input type="radio" name="operation-type" id="operation-type-input" value="income"> Ingreso
+                        <input type="radio" name="operation-type" id="operation-type-input" value="expense"> Egreso
+                    </div>
+                    <div>
+                        <button id="close-modal">Cerrar</button>
+                        <input type="submit" value="Agregar" id="add-operation-btn">
+                    </div>
+                </form>
+            </div>
+        </article>
+        
         <!-- Operation Cards Section -->
         <section id="operations-container">
             <!-- Operation Card -->
