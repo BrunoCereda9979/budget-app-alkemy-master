@@ -1,3 +1,4 @@
+// Estos datos son de prueba
 const operations = [
     {
         "operation_id": 1,
@@ -31,6 +32,7 @@ const operations = [
 
 const operationsContainer = document.getElementById('operations-container');
 
+// Poner todo esto dentro de una funcion
 for (let i = 0; i < operations.length; i++) {
     operationsContainer.innerHTML += 
     `
@@ -39,13 +41,13 @@ for (let i = 0; i < operations.length; i++) {
                 `<img class="opertation-type-icon" src="../assets/expense-icon.svg" alt="Expense icon">` :
                 `<img class="opertation-type-icon" src="../assets/income-icon.svg" alt="Expense icon">`}
             <div class="operation-info">
-                <h2>${operations[i].operation_type === 'expense' ? `-` : `+`} $ ${operations[i].operatcion_amount}</h2>
+                <h2>${operations[i].operation_type === 'expense' ? `-` : `+`} ${`$`}${operations[i].operatcion_amount}</h2>
                 <h3>${operations[i].operation_date}</p>
                 <p>${operations[i].operation_desc}</p>
             </div>
             <div class="action-buttons-container">
-                <img src="../assets/edit-button.svg" alt="Edit button icon">
-                <img src="../assets/delete-button.svg" alt="Edit button icon">
+                <img src="../assets/edit-button.svg" alt="Edit button icon" id='edit-button'>
+                <img src="../assets/delete-button.svg" alt="Edit button icon" id='delete-button'>
             </div>
         </article>
     `
